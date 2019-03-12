@@ -1,0 +1,252 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $colorBlue;
+  color: $colorWhite;
+}
+
+main {
+  max-width: 1200px;
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 3rem auto 2rem auto;
+}
+
+.h1--name {
+  text-transform: none;
+}
+
+form {
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  padding: 1rem 2rem;
+  box-shadow: 1px 1px 15px 2px $colorBlack;
+  border-radius: 5px;
+  background-color: $colorBlueLight;
+  text-align: left;
+}
+
+legend {
+  font-size: 1.5rem;
+  text-align: center;
+  color: $colorWhite;
+  padding: 0 0.5rem;
+}
+
+fieldset {
+  border: 2px solid $colorWhite;
+  border-radius: 5px;
+  padding: 2rem 3rem 3rem 1rem;
+}
+
+label {
+  font-size: 1.3rem;
+  color: $colorWhite;
+  text-transform: uppercase;
+}
+
+
+
+input, textarea {
+  width: 100%;
+  display: block;
+  border: 1px solid $colorBlack;
+  border-radius: 5px;
+  color: $colorWhite;
+  margin: 0.3rem 0 0 0.5rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+
+  &::placeholder {
+    font-size: 1rem;
+    color: $colorBlack;
+  }
+}
+
+div {
+ margin: 1rem 0 0 0;
+}
+
+.form__Error {
+  color: $colorRed;
+  background-color: $colorWhite;
+  padding: 0.2rem 1rem 0.1rem 1rem;
+  margin: 0 0 0 2rem;
+  border: 1px solid $colorRed;
+  border-radius: 4px;
+}
+
+.form__message {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  font-size: 1.5rem;
+  background-color: $colorWhite;
+  border: 2px solid $colorBlack;
+  box-shadow: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: $colorBlack;
+  padding: 1rem 2rem;
+  display: block;
+  margin: 3rem auto 2rem auto;
+  
+
+  &:hover {
+    background-color: $colorBlack;
+    border: 2px solid $colorGrey;
+    color: $colorWhite;
+  }
+}
+
+.button {
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: $colorWhite;
+  border: 2px solid $colorBlack;
+  // box-shadow: 1px 1px 15px 2px $colorBlack;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: $colorBlack;
+  padding: 1rem 2rem;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 500px;
+  left: 50%;
+
+
+  &:hover {
+    background-color: $colorBlack;
+    border: 2px solid $colorGrey;
+    color: $colorWhite;
+  }
+}
+
+.button--flat {
+    top: 220px;
+}
+
+.button--home {
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: $colorWhite;
+  border: 2px solid $colorBlack;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: $colorBlack;
+  padding: 1rem 2rem;
+
+  &:hover {
+    background-color: $colorBlack;
+    border: 2px solid $colorGrey;
+    color: $colorWhite;
+  }
+}
+
+a {
+  color: $colorBlack;
+  text-decoration: none;
+  color: $colorWhite;
+
+  &:hover {
+    color: $colorBlue;
+  }
+}
+
+.card {
+  display: inline-block;
+  width: 350px;
+  box-shadow: 1px 1px 15px 2px $colorBlack;
+  border-radius: 5px;
+  background-color: $colorBlueLight;
+  margin: 2rem 0 2rem 1rem;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+
+  &__arrow {
+    float: right;
+    font-weight: bold;
+    margin: 1rem 0 0 0;
+    color: $colorBlack;
+  }
+
+  &__h2 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  &__h3 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  &__date {
+    margin: 0 0 1.5rem 0;
+  }
+
+  &__p {
+    text-align: left;
+    position: relative;
+    height: 3.5rem;
+    overflow: hidden;
+
+    &--single {
+      padding: 2rem;
+      
+    }
+
+    &--submit {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 1rem 2rem 0 2rem;
+      min-height: 250px;
+    }
+
+    &--review {
+      position: initial;
+      height: auto;
+      overflow: visible;
+      padding: 2rem;
+    }
+
+  }
+
+  &--single {
+    width: 90%;
+    margin-bottom: 5rem;
+    position: relative;
+  }
+}
+
+.card__noContent {
+  height: 350px;
+  background-color: $colorWhite;
+}
+
+.card__noContent__p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  padding: 0 2rem;
+}
